@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="1" name="Suite" parallel="tests"  >
+	<test  name="Test" group-by-instances="true">
+	<!-- if value is true it will run only without priority methods -->
+	<!-- if value is false it will run all methods -->
+	
+  		<!-- <groups>
+  			<run>
+  				<include name="smoke"></include>
+  				<include name="noPriority"></include>
+  			</run>
+  		</groups> -->
+    	<classes>
+    		<class name="com.mangesh.PriorityTest"/>
+      		<class name="com.mangesh.PriorityTest1"/>
+    	</classes>
+	</test>
+</suite> 
